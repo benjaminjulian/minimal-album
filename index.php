@@ -36,6 +36,7 @@
         while (false !== ($entry = readdir($handle))) {
     
             if ($entry != "." && $entry != "..") {
+                // would make a lot more sense to simply scan endings for jpg/png
     
                 $arr[] = $entry;
             }
